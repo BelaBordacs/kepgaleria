@@ -1,5 +1,5 @@
 export class Kartyak {
-    constructor(Kartyak) {
+    constructor(kartyak) {
         this.kartyak = kartyak,
         this.currentIndex = 0;
     };
