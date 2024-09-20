@@ -12,17 +12,17 @@ const pictureElem = document.querySelector('.picture');
 const carouselElem = document.querySelector('.carousel');
 
 
-kartyakObj.displayCurrentPicture(pictureElem);
+kartyakObj.displayPicture(pictureElem);
 kartyakObj.displayThumbnails(carouselElem);
 
 
 document.querySelector('.next').addEventListener('click', () => {
     kartyakObj.nextPicture();
-    kartyakObj.displayCurrentPicture(pictureElem);
+    kartyakObj.displayPicture(pictureElem);
 });
 
 document.querySelector('.previous').addEventListener('click', () => {
     kartyakObj.prevPicture();
-    kartyakObj.displayCurrentPicture(pictureElem);
+    kartyakObj.displayPicture(pictureElem);
 });
 

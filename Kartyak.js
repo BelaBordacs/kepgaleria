@@ -7,7 +7,7 @@ export class Kartyak {
     displayPicture(pictureElem) {
         pictureElem.innerHtml = '';
         const kartya = this.kartyak[this.currentIndex];
-        pictureElem.appendChild(kartya, createLargeImageElement())
+        pictureElem.appendChild(kartya, createLargeImageElem())
     };
 
     displayThumbnails(carouselElem) {
