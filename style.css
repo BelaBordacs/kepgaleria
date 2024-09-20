@@ -1,0 +1,28 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.picture img.large-image {
+    width: 80%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.carousel {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.carousel img.thumbnail {
+    width: 100px;
+    height: auto;
+    cursor: pointer;
+}
+
+button {
+    padding: 10px;
+    margin: 20px;
+    font-size: 20px;
+}
