@@ -5,9 +5,9 @@ export class Kartyak {
     };
 
     displayPicture(pictureElem) {
-        pictureElem.innerHtml = '';
+        pictureElem.innerHTML = '';
         const kartya = this.kartyak[this.currentIndex];
-        pictureElem.appendChild(kartya, createLargeImageElem())
+        pictureElem.appendChild(kartya.createLargeImageElem());
     };
 
     displayThumbnails(carouselElem) {
@@ -21,10 +21,10 @@ export class Kartyak {
     }
 
     nextPicture() {
-        this.currentIndex = (this.currentIndex + 1) % this.kartyak.length;
+        this.currentIndex = (this.currentIndex + 1);
     }
 
-    previousPicture() {
-        this.currentIndex = (this.currentIndex - 1 + this.kartyak.length) % this.kartyak.length;
+    prevPicture() {
+        this.currentIndex = (this.currentIndex - 1);
     }
 }

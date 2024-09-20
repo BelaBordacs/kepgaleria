@@ -14,12 +14,12 @@ export class Kartya {
         return img;
     }
 
-    createThumbnailImagesElem() {
+    createThumbnailImagesElem(onClickCallback) {
         const thumbNail = document.createElement('img');
         thumbNail.src = this.url;
         thumbNail.alt = this.leiras;
         thumbNail.classList.add('thumbnail');
-        thumbNail.addEventListener('click');
+        thumbNail.addEventListener('click', onClickCallback);
         return thumbNail;
     }
 }
